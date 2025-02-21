@@ -1,0 +1,6 @@
+flask
+IPython
+markupsafe
+escape
+requests
+pandas
