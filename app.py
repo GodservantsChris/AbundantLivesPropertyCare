@@ -33,7 +33,7 @@ def load_user(user_id):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        user_id = 'GodservantsCjm' # request.form['user_id']
+        user_id = request.form['user_id']
         user = User(user_id)
         login_user(user)
         return redirect(url_for('protected'))

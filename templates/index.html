@@ -1,39 +1,56 @@
 <!doctype html>
 <head>
-    <title>Godservants Python Web Service</title>
+    <title>Abundant Lives Property Care</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <html>
    <body>
-     <main>
-        <div class="px-4 py-3 my-2 text-center">
-          <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/RevAi-LineGraphInCloud.svg') }}" alt="Azure Logo" width="192" height="192"/>
-          <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-          <h1 class="display-6 fw-bold text-primary">Welcome to Abundant Lives Property Care</h1>
+    <header>      
+      <div class="px-2 py-2 mx-2 my-2 text-center">
+        <div class="row">
+          <div class="col-1">
+            <img 
+              src="{{ url_for('static', filename='images/RevAi-LineGraphInCloud.svg') }}" 
+              alt="Abundant Lives Logo"/
+              height="50px">        
+          </div>
+          <div class="col">
+            Middle
+          </div>
+          <div class="col">
+            End
+          </div>
         </div>
-        <form method="post" action="{{url_for('login')}}">
-          <div class="px-4 py-3 my-2 text-center">
-            <h2 class="display-6 text-secondary">Sign In</h2>            
-          </div>
-          <div class="col-md-6 mx-auto text-center">
-            <!-- Submit -->           
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-              <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Sign In</button>
-            </div>            
-          </div>
-        </form>  
-        <form method="post" action="{{url_for('BusinessPlanForm')}}">
-          <div class="px-4 py-3 my-2 text-center">
-            <h2 class="display-6 text-secondary">Business Plan</h2>            
-          </div>
-          <div class="col-md-6 mx-auto text-center">
-            <!-- Submit -->           
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-              <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
-            </div>            
-          </div>
-        </form>   
-     </main>      
+      </div>
+    </header>
+    <main>
+      <div class="px-4 py-3 my-2 text-center">
+        <h1 class="display-6 fw-bold text-primary">Welcome to Abundant Lives Property Care</h1>
+      </div>
+      <form method="get" action="{{url_for('login')}}">
+        <div class="px-4 py-3 my-2 text-center">
+          <h2 class="display-6 text-secondary">Sign In</h2>            
+        </div>
+        <div class="col-md-6 mx-auto text-center">
+          <!-- Submit -->           
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Sign In Page</button>
+          </div>            
+        </div>
+      </form>  
+      <form method="post" action="{{url_for('BusinessPlanForm')}}">
+        <div class="px-4 py-3 my-2 text-center">
+          <h2 class="display-6 text-secondary">Business Plan</h2>            
+        </div>
+        <div class="col-md-6 mx-auto text-center">
+          <!-- Submit -->           
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
+          </div>            
+        </div>
+      </form>   
+     </main> 
+     <footer></footer>     
    </body>
 </html>
