@@ -1,4 +1,5 @@
 flask
+flask-login
 IPython
 markupsafe
 escape
