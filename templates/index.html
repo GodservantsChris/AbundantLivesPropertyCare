@@ -6,8 +6,8 @@
 </head>
 <html>
    <body>
-    <header>      
-      <div class="px-2 py-2 mx-2 my-2 text-center">
+    <div class="px-2 py-2 my-2 text-center">
+      <header>
         <div class="row">
           <div class="col-1">
             <img 
@@ -18,39 +18,41 @@
           <div class="col">
             Middle
           </div>
-          <div class="col">
-            End
+        <div class="col">            
+          <form method="get" action="{{url_for('login')}}">
+            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Sign In</button>
+          </form>
+        </div>
+      </header>
+      <main>
+        <h1 class="display-6 fw-bold text-primary">Welcome to Abundant Lives Property Care</h1> 
+        <div class="row">
+          <div class="col-3">
+            <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+              Side Panel
+            </div>
           </div>
+          <div class="col">
+            <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+              <form method="post" action="{{url_for('BusinessPlanForm')}}">            
+                <h2 class="text-secondary">Business Plan</h2>            
+                <!-- Submit -->           
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>   
+       </main> 
+       <footer>
+        <div class="row border-primary-subtle" >
+          <div class="col">
+            <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+              Footer
+            </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="px-4 py-3 my-2 text-center">
-        <h1 class="display-6 fw-bold text-primary">Welcome to Abundant Lives Property Care</h1>
-      </div>
-      <form method="get" action="{{url_for('login')}}">
-        <div class="px-4 py-3 my-2 text-center">
-          <h2 class="display-6 text-secondary">Sign In</h2>            
-        </div>
-        <div class="col-md-6 mx-auto text-center">
-          <!-- Submit -->           
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Sign In Page</button>
-          </div>            
-        </div>
-      </form>  
-      <form method="post" action="{{url_for('BusinessPlanForm')}}">
-        <div class="px-4 py-3 my-2 text-center">
-          <h2 class="display-6 text-secondary">Business Plan</h2>            
-        </div>
-        <div class="col-md-6 mx-auto text-center">
-          <!-- Submit -->           
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
-          </div>            
-        </div>
-      </form>   
-     </main> 
-     <footer></footer>     
+       </footer>
+    </div>     
    </body>
 </html>
