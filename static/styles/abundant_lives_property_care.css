@@ -2,10 +2,17 @@
     height:50px;
 }
 
-.bkgrnd-image-falcon_and_rabbit{
-    background-image: url('/static/images/FalconAndRabbit.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height:700px;
+.container-img_and_text {
+    position: relative;
+}
+
+.contained-in-img-font-20 {
+    position: absolute;
+    font-size: 20px;
+}
+
+.contained-img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
 }

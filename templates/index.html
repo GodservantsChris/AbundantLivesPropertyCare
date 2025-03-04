@@ -13,11 +13,10 @@
           <div class="col-1">
             <img src="{{ url_for('static', filename='images/RevAi-LineGraphInCloud.svg') }}" 
               alt="Abundant Lives Logo"/
-              class="img-logo-header"
-            >        
+              class="img-logo-header">        
           </div>
           <div class="col">
-            Middle
+            Let's model this layout after W3 Schools
           </div>
         <div class="col">            
           <form method="get" action="{{url_for('login')}}">
@@ -30,17 +29,26 @@
         <div class="row">
           <div class="col-3">
             <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-              Side Panel
+              <div class="row">
+                <div class="col"><form method="post" action="{{url_for('BusinessPlanForm')}}">          
+                  <!-- Submit -->           
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                    <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
+                  </div>
+                </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col bkgrnd-image-falcon_and_rabbit">
-            <form method="post" action="{{url_for('BusinessPlanForm')}}">            
-              <h2 class="text-secondary">Business Plan</h2>            
-              <!-- Submit -->           
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-                <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Business Plan</button>
+          <div class="col">
+            <div class="row container-img_and_text">
+              <img src="{{ url_for('static', filename='images/FalconAndRabbit.png') }}"
+                alt="Falcon And Rabbit"
+                class="contained-img">
+              <div class="contained-in-img-font-20"> 
+                <h2 class="text-dark">Business Plan Placeholder</h2>            
               </div>
-            </form>
+            </div>
           </div>
         </div>   
        </main> 
