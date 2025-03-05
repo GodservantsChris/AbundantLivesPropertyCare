@@ -18,11 +18,11 @@ The technology uses information from Light Detection and Ranging (LIDAR) data to
 The technology provides information about the most probable nearby free-ranging creatures.
 
 ##### Example Questions that our application would answer
-- How can I change my property to foster Broad-winged Hawks?
-- What plants can I grow that favor white-tailed deer?
-- What is a plant that provides ground cover and prevents erosion?
-- Where on my property should I plant a Flowering Dogwood tree?
-- What colorful flowers grow best on the front side of my shed?
+How can I change my property to foster Broad-winged Hawks?  
+What plants can I grow that favor white-tailed deer?  
+What is a plant that provides ground cover and prevents erosion?  
+Where on my property should I plant a Flowering Dogwood tree?  
+What colorful flowers grow best on the front side of my shed?  
 
 #### Market
 Our target market includes property owners.

@@ -59,7 +59,9 @@ def index():
 @app.route('/BusinessPlanForm', methods=['POST'])
 def BusinessPlanForm():
    print('Request for Business Plan page received')
-   return render_template('Executive Summary.html')
+   content = render_template('Executive Summary.html')
+   print('content: ' + content)
+   return content
 
 @app.route('/favicon.ico')
 def favicon():
